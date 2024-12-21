@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>ZionEdge: CONTACT US</title>
+</head>
+<body>
+<style>
+        .button{
+            position: absolute;
+            top: 13%;
+            left: 50%;
+            border: none;
+            color: #000000;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            cursor: pointer;
+            background: #90EE90;
+            border: solid #008000;
+        }
+        .about_us{
+            position: absolute;
+            top: 13%;
+            left: 63%;
+            border: none;
+            color: #000000;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            cursor: pointer;
+            background: #90EE90;
+            border: solid #008000;
+        }
+        .services{
+            position: absolute;
+            top: 13%;
+            left: 79%;
+            border: none;
+            color: #000000;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            cursor: pointer;
+            background: #90EE90;
+            border: solid #008000;
+        }
+        .contact{
+            position: absolute;
+            top: 13%;
+            left: 94%;
+            border: none;
+            color: #000000;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            cursor: pointer;
+            background: #90EE90;
+            border: solid #008000;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+        .container img{
+            width: 1360px;
+            heigth: 720px;
+            display: block;
+        }
+        .form1{
+            position: absolute;
+            top: 57%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            width: 500px; /* Fixed width for the square */
+            height: 590px; /* Fixed height for the square */
+            background-color: #6ae784; /* Semi-transparent background */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px; /* Optional: Rounded corners
+        }
+        .submit{
+            position: absolute;
+            top: 13%;
+            left: 79%;
+            border: none;
+            color: #000000;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 17px;
+            cursor: pointer;
+            background: #90EE90;
+            border: solid #008000;
+        }
+</style> 
+<div>
+    <div class="container">
+        <img src="contact01.png" width:"1280" height:"720">     
+            <div class="form1">
+            <form action="https://formspree.io/f/xyzyqozo" method="POST">
+               <label for="name">Name:</label>
+               <p></p>
+               <input type="text" id="name" name="name" placeholder="Your full name" required>
+               <p></p>
+               <label for="company-name">Company Name:</label>
+               <p></p>
+               <input type="text" id="company-name" name="company_name" placeholder="Your company name" required>
+               <p></p>
+               <label for="company-address">Company Address:</label>
+               <p></p>
+               <input type="text" id="company-address" name="company_address" placeholder="Your company address" required>
+               <p></p>
+               <label for="email">Email Address:</label>
+               <p></p>
+               <input type="email" id="email" name="email" placeholder="Your email address" required>
+               <p></p>
+               <label for="phone">Phone Number:</label>
+               <p></p>
+               <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+               <p></p>
+               <label for="subject">Subject:</label>
+               <p></p>
+               <input type="text" id="subject" name="subject" placeholder="Subject of your message">
+               <p></p>
+               <label for="message">Message:</label>
+               <p></p>
+               <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+               <p></p>
+               <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            const name = document.getElementById("name").value.trim();
+            const companyName = document.getElementById("company_name").value.trim();
+            const companyAddress = document.getElementById("company_address").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const subject = document.getElementById("subject").value.trim();
+            
+            if (!name || !companyName || !companyAddress || !email || !phone || !subject) {
+                alert("Please fill all fields.");
+                return false;
+            }
+            alert("Form submitted successfuly!");
+        }
+    </script>
+    <div class="copyright">
+        <img src="contact03.png" width:"1280px" height:"720px">
+        <img src="new_copyright.png" width:"1280" height:"720">
+    </div>
+    <style>
+        .copyright{
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+        .copyright img{
+            width: 1360px;
+            heigth: 720px;
+            display: block;
+        }
+    </style>
+    
+</div>
+<div class="alert">
+    <!--<span class="msg">You are already in contact page!</span> -->
+</div>   
+    <a href="index.html">
+    <button class="button">HOME</button>
+    </a>
+    <a href="about_us.html">
+    <button class="about_us">ABOUT US</button>
+    </a>
+    <a href="services.html">
+    <button class="services">SERVICES</button>
+    </a>
+    <button class="contact" onclick="Alert('You are already in Contact Page!')">CONTACT</button>
+    
+</body>    
+</html>
